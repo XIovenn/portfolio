@@ -134,3 +134,24 @@ footer{
         font-size:1.6rem;
     }
 }
+
+/* hero */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);
+    border-radius:24px;
+    margin-bottom:40px;
+}
+.hero h1{
+    font-size:2.8rem;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:16px;
+}
+.hero p{
+    font-size:1.25rem;
+    color:#334155;
+    max-width:600px;
+    margin:0 auto 28px;
+}
