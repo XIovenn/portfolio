@@ -155,3 +155,95 @@ footer{
     max-width:600px;
     margin:0 auto 28px;
 }
+
+/* 项目卡片网络 */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:20px;
+}
+.project-card{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    padding:24px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* 鼠标悬停特效 */
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.08);
+    border-color:#2563eb;
+}
+
+.card-image{
+    font-size:3rem;
+    margin-bottom:12px;
+}
+.project-card h3{
+    font-size:1.3rem;
+    margin-bottom:8px;
+    color:#0f172a;
+}
+.project-card p{
+    color:#475569;
+    font-size:0.95rem;
+    margin-bottom:12px;
+}
+.card-tag{
+    color:#2563eb;
+    font-weight:500;
+    font-size:0.9rem;
+}
+
+/* 弹窗Modal */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    backdrop-filter:blur(4px);
+    justify-content:center;
+    align-items:center; 
+}
+.modal-content{
+    background:white;
+    padding:40px 48px;
+    border-radius:32px;
+    max-width:500px;
+    width:90%;
+    box-shadow:0 40px 80px rgba(0,0,0,0.2);
+    animation:fadeUp 0.3s ease;
+    position:relative;
+}
+.close-btn{
+    position:absolute;
+    top:16px;
+    right:24px;
+    font-size:2rem;
+    font-weight:300;
+    cursor:pointer;
+    color:#94a3b8;
+}
+.close-btn:hover{
+    color:#0f172a;
+}
+/* 弹窗动画 */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

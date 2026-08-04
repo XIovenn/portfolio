@@ -36,6 +36,24 @@
       <a href="pages/projects.html" class="btn" id="sendBtn">查看我的项目 -></a>
       </section>
       <!-- hero end -->
+    <!-- 项目卡片区域 -->
+     <h2 style="margin-top:20px;">我的项目</h2>
+     <div class="project-grid">
+      <!-- Card 1 -->
+       <div class="project-card" data-project="taskboard">
+       <div class="card-image">📋</div>
+       <h3>全栈任务看板</h3>
+       <p>React + Spring Boot构建的敏捷任务管理工具</p>
+       <span class="card-tag">点击查看详情-></span>
+     </div>
+     <!-- Card 2 -->
+      <div class="project-card" data-project="blog">
+        <div class="card-image">✍️</div>
+        <h3>个人技术博客</h3>
+        <p>记录全栈学习</p>
+        <span class="card-tag">点击查看详情-></span>
+      </div>
+     </div>
   </main>
   
   <!--这是页脚-->
@@ -45,5 +63,16 @@
     <p>contact me:xixiw2020@outlook.com</p>
   </footer>
 <script src="script.js"></script>
+  <!-- 弹窗Modal -->
+   <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modalTitle">项目标题</h2>
+      <p id="modalDesc">项目详细描述</p>
+      <p id="modalTech"><strong>技术栈：</strong>待补充</p>
+    </div>
+   </div>
+  
+   <script src="script.js"></script>
 </body>
 </html>
