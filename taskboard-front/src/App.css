@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  background:#858b2d;
+  font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+.app-container{
+  text-align:center;
+  padding:40px;
+}
+
+.app-container h1{
+  font-size:3.5rem;
+  color:#2ed13f;
+  margin-bottom:16px;
+}
+
+.app-container p{
+  font-size:1.3rem;
+  color:#2fb81d;
+}
